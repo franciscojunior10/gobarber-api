@@ -19,7 +19,7 @@ usersRouter.patch(
   '/avatar',
   ensureAuthenticated,
   upload.single('avatar'),
-  userAvatarController.upadate,
+  userAvatarController.update,
 );
 
 export default usersRouter;
