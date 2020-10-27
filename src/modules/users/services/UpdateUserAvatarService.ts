@@ -1,12 +1,9 @@
-/* eslint-disable camelcase */
 import path from 'path';
 import fs from 'fs';
-import { inject, injectable } from 'tsyringe';
-
 import uploadConfig from '@config/upload';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
-
 import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 import IUsersRepository from '../repositories/IUsersRepository';
 
